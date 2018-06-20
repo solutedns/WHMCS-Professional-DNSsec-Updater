@@ -104,7 +104,7 @@ class Request {
 							foreach ($vars['keys'] as $key) {
 
 								if ($key['active'] == '1') {
-									$flag = ($key['flag'] == 'KSK') ? '257' : '256';
+									$flag = ($key['flag'] == 'ZSK') ? '256' : '257';
 									$sec->setKey($flag, $key['algorithm'], $key['public_key']);
 								}
 							}
